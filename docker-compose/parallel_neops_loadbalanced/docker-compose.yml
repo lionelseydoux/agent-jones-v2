@@ -31,7 +31,7 @@ services:
   agent-jones:
     networks:
       - traefik
-    image: "quay.io/zebbra/agent-jones:1.2"
+    image: "quay.io/zebbra/agent-jones:1.3.1"
     labels:
       # - "traefik.agent-jones.rule=PathPrefix:/aj/"
       # - "traefik.frontend.rule=Host('${PUBLIC_AJ_HOSTNAME}')"
