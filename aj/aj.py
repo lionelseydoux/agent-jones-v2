@@ -867,8 +867,10 @@ class InterfaceAPI(Resource):
                     interfaces[index]['poePower'] = poe[interfaces[index]
                                                         ['ifDescr']]['power']
                 elif interfaces[index]['ifName'] in poe:
-                    interfaces[index]['poeStatus'] = str(poe[interfaces[index]['ifName']]['status'])
-                    interfaces[index]['poePower'] = poe[interfaces[index]['ifName']]['power']
+                    interfaces[index]['poeStatus'] = str(
+                        poe[interfaces[index]['ifName']]['status'])
+                    interfaces[index]['poePower'] = poe[interfaces[index]
+                                                        ['ifName']]['power']
                 else:
                     interfaces[index]['poeStatus'] = ''
                     interfaces[index]['poePower'] = None
